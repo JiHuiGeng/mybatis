@@ -1,3 +1,8 @@
 mybatis：
         底层是对JDBC的封装
         JDBC事务是自动提交的，如果需要手动提交，那么就将autoCommit设置为false
+        注意在实体类中要添加无参构造，
+        否则，在执行查询时，会出现 ：
+        Cause by :
+                   org.apache.ibatis.executor.ExecutorException:
+                                No constructor found in com.geng.pojo.Flower matching [java.lang.Integer, java.lang.String, java.lang.Float, java.lang.String]

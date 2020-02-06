@@ -9,6 +9,9 @@ public class Flower {
     private double price;
     private String production;
 
+    public Flower() {
+    }
+
     public Flower(int id, String name, double price, String production) {
         this.id = id;
         this.name = name;
@@ -46,5 +49,15 @@ public class Flower {
 
     public void setProduction(String production) {
         this.production = production;
+    }
+
+    @Override
+    public String toString() {
+        return "Flower{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", production='" + production + '\'' +
+                '}';
     }
 }

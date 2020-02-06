@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace：是实现类的包名+类名-->
-<mapper namespace="com.geng.pojo.Flower">
+<mapper namespace="a.b">
     <!--id就是方法名，查询需要有返回值类型
         resultType : 是指返回值类型
         因为mybatis底层是对jdbc的封装，所以读取时一行一行的，
