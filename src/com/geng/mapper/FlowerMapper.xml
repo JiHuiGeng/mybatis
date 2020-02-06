@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace：是实现类的包名+类名-->
+<mapper namespace="com.geng.pojo.Flower">
+    <!--id就是方法名，查询需要有返回值类型
+        resultType : 是指返回值类型
+        因为mybatis底层是对jdbc的封装，所以读取时一行一行的，
+        所以，在返回值类型那里，要写List的泛型
+        而，其解析是使用反射技术，所以，要定义全路径，
+        如下所示：
+    -->
+    <!--查询-->
+    <select id="selectAll" resultType="com.geng.pojo.Flower">
+        SELECT * FROM flower;
+    </select>
+</mapper>
