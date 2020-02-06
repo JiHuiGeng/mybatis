@@ -15,4 +15,12 @@
     <select id="selectAll" resultType="com.geng.pojo.Flower">
         SELECT * FROM flower;
     </select>
+    <!--查询flower中数据有几行-->
+    <select id="selectOne" resultType="int">
+        select count(*) from flower;
+    </select>
+
+    <select id="selectMap" resultType="com.geng.pojo.Flower">
+        select * from flower;
+    </select>
 </mapper>

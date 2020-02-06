@@ -6,3 +6,6 @@ mybatis：
         Cause by :
                    org.apache.ibatis.executor.ExecutorException:
                                 No constructor found in com.geng.pojo.Flower matching [java.lang.Integer, java.lang.String, java.lang.Float, java.lang.String]
+
+         resultType:在mybatis中，使用别名，如int别名_int,Integer别名可以是int
+         selectMap("mapper.xml内方法","key")，返回map<?,?>resultType控制返回值为map中给定的返回类型__适用于通讯录，快速查询某个人
